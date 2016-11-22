@@ -15,7 +15,7 @@ DATADIR="/mnt/msql-data/data"
 LOGDIR="/mnt/msql-data/log"
 ACCEPT_EULA="YES"
 SA_PASSWORD=$1
-IMAGE="langdon/fedora-mssqlserver"
+IMAGE="whitel/fedora-mssqlserver"
 
 docker build -t $IMAGE .
 
