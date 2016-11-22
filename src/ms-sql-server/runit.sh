@@ -1,4 +1,15 @@
-b#!/bin/bash
+#!/bin/bash
+
+display_usage() { 
+    echo -e "\nUsage:\n$0 SA_PASSWORD \n" 
+} 
+
+# if less than one argument supplied, display usage 
+if [  $# -le 0 ] 
+then 
+    display_usage
+    exit 1
+fi 
 
 DATADIR="/mnt/msql-data/data"
 LOGDIR="/mnt/msql-data/log"
