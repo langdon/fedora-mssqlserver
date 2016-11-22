@@ -4,7 +4,7 @@ DATADIR="/mnt/msql-data/data"
 LOGDIR="/mnt/msql-data/log"
 OPT1="YES"
 OPT2=$1
-IMAGE="whitel/fedora-msqlserver"
+IMAGE="langdon/fedora-msqlserver"
 
 docker build -t $IMAGE .
 #atomic run $IMAGE
