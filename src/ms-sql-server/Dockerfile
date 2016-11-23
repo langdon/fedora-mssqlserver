@@ -10,6 +10,7 @@ LABEL RUN /usr/bin/docker run -d -t -v \${DATADIR}:/var/opt/mssql/data:rw,z -v \
 #ENV ACCEPT_EULA
 VOLUME /var/opt/mssql/data
 VOLUME /var/opt/mssql/log
+EXPOSE 1433
 
 ADD start.sh /start.sh 
 #RUN chmod a+x /start.sh
